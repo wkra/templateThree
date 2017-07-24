@@ -1,0 +1,60 @@
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+
+// Medium devices (tablets, 768px and up)
+//@media only screen and (min-width: 768px), only screen and (min-device-width: 768px){
+@media (min-width: 768px) {
+  .container--flex {
+    display:flex!important;
+  }
+  .item--footer__media{
+    text-align: center;
+  }
+  .item--footer__menu{
+    text-align: center;
+  }
+  .item--footer__created{
+    text-align: right;
+  }
+  .section--last{
+    padding-top:70px;
+    padding-bottom: 20px;
+  }
+  .section--header__bg{
+    background-position: 50% -70px;
+    margin-bottom: -70px;
+  }
+
+/* MENU */
+.navbar{
+
+}
+#navigation {
+margin-top:0;
+  padding-top:0;
+  a {
+    display: inline;
+    padding-left: 30px;
+  }
+  a:hover::before{
+    width: 90%;
+
+  }
+}
+.navbar-collapse::before{
+    height: 0;
+}
+
+
+}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px){
+
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px){
+
+}

@@ -19,7 +19,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // social media icons
 (function(){
-  $('.social-media>a').each(function(){$(this).load('svg/' + $(this).attr('data-icon') + '.svg')});
+  $('.social-media a').each(function(){$(this).load('svg/' + $(this).attr('data-icon') + '.svg')});
+  console.log("works");
 })();
   // end social media icons
 

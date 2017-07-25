@@ -13,6 +13,8 @@ $bgGray: #f6f6f6;
 
 h1{
   font-size: 36px;
+  font-family: Megrim;
+  font-weight: bold;
 }
 h2 {
   font-size: 24px;
@@ -54,6 +56,19 @@ a:focus{
 
 }
 
+
+.navigation--button{
+  position: relative;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-right: 15px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
 .section--header{
   width:100%;
   height: 100%;
@@ -65,6 +80,8 @@ a:focus{
   z-index: 20;
   span{
     font-family: Megrim;
+    font-size: 25px;
+    font-weight: 600;
   }
     
 
@@ -84,36 +101,18 @@ a:focus{
   text-align: center;
 }
 .section--header__menu{
-  position: fixed;
-  right: 5px;
-  top: 20px;
+  width:200px;
+  right:100%;
   z-index: 1999;
-  font-family: Megrim;
+  
   a{
-    width:100%;
-    height: 65px;
-    width: 65px;
-    line-height: 22px;
+
     display: block;
-    text-align: center;
-    border-radius: 100%;
-    border: 2px solid rgba(102, 102, 102, 0.2);
-    transition: all 1s;
-    color: $textGray;
-    padding:30% 10%;
-    font-size:13px;
-    font-weight: 600;
-    transform: scale(0.8);
-    background-color: rgba(255, 255, 255, 0.5);
-    box-shadow: 0 0 10px 0px #fff;
+    text-align: right;
 
     &:hover{
       text-decoration: none;
-      transform: scale(1);
-      color:$colorRed;
-      background-color: rgba(255, 255, 255, 0.7);
-      border: 1px solid transparent;
-      box-shadow: 0 0 10px 0px #fff;
+
     }
   }
 
@@ -200,6 +199,41 @@ a:focus{
   padding-bottom: 0px;
   
 }
+.section__social{
+  background-color: $bgGray;
+  color: $textGray;
+  .item {
+    padding-bottom: 0!important;
+  }
+  h2 {
+    margin-bottom: 0;
+    font-size: 15px;
+  }
+  p{
+    font-size: 10px;
+  }
+}
+.social-media--text{
+  display:block!important;
+  
+}
+
+.social-media--icons {
+  margin-bottom: 20px;
+}
+
+.section--last{
+  background-color: #333333;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  .item {
+    padding-bottom: 10px;
+  }
+  .container--flex{
+    
+  }
+}
+
 
 
 .flex{
@@ -217,55 +251,28 @@ a:focus{
   padding-bottom: 50px;
 }
 
-
-.item--border p{
-  padding: 60px;
-  border: $sizeColorUnderlineAndBorder solid #88e3e7;
-  border-radius: 30px;
-  font-weight: 600;
-  font-size: 25px;
-  text-align: center;
-  background-color: #88e3e7;
-  box-shadow: 0px 0px 8px 0px #cccccc;
-}
 .item--footer {
   display:block;
   flex:1;
   font-size: 15px;
-  color: $footerTekstColor;
-  padding-bottom: 30px;
+  color: $textWhite;
 
-  b {
-    color:$primaryTekstColor;
+  p {
+    line-height: 70%;
+  }
+  a{
+    color: $colorRed;
   }
 
 }
-.item--footer__media{
-  text-align: left;
-}
-.item--footer__menu{
-  text-align: left;
 
-  a {
-    padding: 1px;
-    display:block;
-    color:$footerTekstColor;
-    text-decoration: none;
-  }
-  a:hover{
-    text-decoration: none;
-    color:$primaryTekstColor;
-  }
-}
 .item--footer__copyright{
   font-size: 8px;
   font-weight: 500;
   p {
     font-size: 12px;
-    margin-bottom: 0px;
       text-align: left;
   }
-  padding-bottom: 10px;
 }
 .icon{
   position:relative;
@@ -307,7 +314,9 @@ a:focus{
 } 
 .navbar{
   margin-top:0px;
-  background-color: #ffffff;
+  font-family: Megrim;
+  position: absolute;
+  width: 100%;
   a:hover{
     font-weight: 600;
     color:$menuTekstColor
@@ -317,17 +326,21 @@ a:focus{
 #navigation {
   margin-top: 10px;
   padding-top: 10px;
+  text-align: right;
+  overflow: hidden;
+  padding-right: 30px;
   a {
     color: #333333;
     position:relative;
     display: block;
     padding-left: 1%;
     padding-bottom: 10px;
+    font-weight: bold;
   }
   a:hover, a:focus {
     text-decoration: none;
     color:$colorRed;
-
+//    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
   }
 
 }
@@ -336,7 +349,7 @@ a:focus{
   position:absolute;
   width: 90%;
   height: 1px;
-  background-color: $colorRed;
+  background-color: transparent;
   transform:translateY(-10px);
 }
 

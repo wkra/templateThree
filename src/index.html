@@ -6,6 +6,11 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Nunito">   
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Megrim">
     <!-- build:css -->
     <link type="text/css" href="css/bootstrap.min.css" rel="stylesheet">
     <link type="text/css" href="css/bootstrap-theme.min.css" rel="stylesheet">
@@ -14,74 +19,67 @@
     <link rel="stylesheet" href="css/style.css">
 
     <!-- endbuild -->
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Nunito">
+
   </head>
   <body>
     
     <section class="section section--header">
-      <div class="section--header__media social-media">
-        <a href="#" data-icon="facebook"></a>
-        <a href="#" data-icon="twitter"></a>
-        <a href="#" data-icon="youtube"></a>
-        <a href="#" data-icon="google"></a>
+      <div class="section--header__menu">
+        <a href="#" data-link="ome">Home</a>
+        <a href="#" data-link="orem">Lorem</a>
+        <a href="#"data-link="psum">Ipsum</a>
+        <a href="#"data-link="ontact">Contact</a>
       </div>
       <div class="section--header__bg"></div>
-      <!-- nav -->
-      <nav class="section--header__nav navbar navbar-light bg-faded">
-        <div class="container">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#header">
-              <div class="brand">
-
-                  <span></span>
-
-              </div>
-
-            </a>
-          </div>
-
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="navigation" >
-
-            <a href="#">home</a>
-            <a href="#">contact</a>
-            <img class="logo" src="img/logo.png" alt="" height="" width="">
-            <a href="#">Ipsum</a>
-            <a href="#">Kontakt</a>
-          </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-      </nav>
-      <!-- end nav -->
+      <div class="section--header__text">            
+        <span>Lorem ipsum</span>
+        <img class="logo" src="img/logo.png" alt="" height="" width="">
+        <span>dolor sit</span>
     </section>
     <section class="section section__a">
-      <div class="container container__flex ">
+      <div class="container flex ">
         <div class="section--item section--item__img">
         <img src="img/img1.jpg" alt="" height="" width=""></div>
-        <div class="section--item section--item__text">
-          <h1 class="red">Lorem ipsum</h1>
+        <div class="section--item section--item__text section--item__text__padd-left padding">
+          <h1><span class="red">Lorem ipsum</span><span> dolor sit</span></h1>
           <p>Lorem ipsum dolor sit amet mauris. Mauris metus. Integer adipiscing gravida at, bibendum id, sapien. In metus wisi, aliquam at, cursus mauris vitae turpis. Mauris.</p>
-          <p class="red">Lorem ipsum dolor sit amet mauris vitae massa.</p>
+          <p class="red"><i class="fa fa-cog fa-fw" aria-hidden="true"></i>Lorem ipsum dolor sit amet mauris vitae massa.</p>
           <p>Lorem ipsum dolor sit amet mauris. Mauris metus. Integer adipiscing gravida at, bibendum id, sapien. In metus wisi, aliquam at, cursus mauris vitae turpis. Mauris.</p>
-          <p class="red">Lorem ipsum dolor sit amet mauris vitae massa.</p>
+          <p class="red"><i class="fa fa-user-circle" aria-hidden="true"></i>Lorem ipsum dolor sit amet mauris vitae massa.</p>
           <p>Lorem ipsum dolor sit amet mauris. Mauris metus. Integer adipiscing gravida at, bibendum id, sapien. In metus wisi, aliquam at, cursus mauris vitae turpis. Mauris.</p>
-          <p class="red">Lorem ipsum dolor sit amet mauris vitae massa.</p>
+          <p class="red"><i class="fa fa-thumbs-up" aria-hidden="true"></i>Lorem ipsum dolor sit amet mauris vitae massa.</p>
           <p>Lorem ipsum dolor sit amet mauris. Mauris metus. Integer adipiscing gravida at, bibendum id, sapien. In metus wisi, aliquam at, cursus mauris vitae turpis. Mauris.</p>
           </div>
       </div>
     </section>
 
     <section class="section section__b">
-      <div class="container container__flex ">
-        <div class="section--item section--item__text"></div>
-        <div class="section--item section--item__text"></div>
+      <div class="container ">
+        <div class="section--item__text">
+          <h1 class="white underline">Lorem ipsum dolor amet.</h1>
+        </div>
+        <div class="flex">
+          <div class="section--item section--item__text">
+            <p class="white">Lorem ipsum dolor sit.
+              <i class="fa fa-flag fa-lg"></i>
+            </p>
+            <p>Lorem ipsum dolor sit amet ipsum. Fusce wisi bibendum arcu id elementum in, pulvinar sem at lorem. Pellentesque pede turpis gravida turpis. Integer at interdum eu, neque. Maecenas eget sapien. Cras enim sodales quam. </p>
+          </div>
+          <div class="section--item section--item__text">
+            <p class="white">Lorem ipsum dolor sit.<i class="fa fa-handshake-o" aria-hidden="true"></i></p>
+            <p>Lorem ipsum dolor sit amet ipsum. Fusce wisi bibendum arcu id elementum in, pulvinar sem at lorem. Pellentesque pede turpis gravida turpis. Integer at interdum eu, neque. Maecenas eget sapien. Cras enim sodales quam. </p>
+          </div>
+        </div>
+          <div class="flex">
+          <div class="section--item section--item__text">
+            <p class="white">Lorem ipsum dolor sit.<i class="fa fa-bar-chart" aria-hidden="true"></i></p>
+            <p>Lorem ipsum dolor sit amet ipsum. Fusce wisi bibendum arcu id elementum in, pulvinar sem at lorem. Pellentesque pede turpis gravida turpis. Integer at interdum eu, neque. Maecenas eget sapien. Cras enim sodales quam. </p>
+          </div>
+          <div class="section--item section--item__text">
+            <p class="white">Lorem ipsum dolor sit.<i class="fa fa-cog" aria-hidden="true"></i></p>
+            <p>Lorem ipsum dolor sit amet ipsum. Fusce wisi bibendum arcu id elementum in, pulvinar sem at lorem. Pellentesque pede turpis gravida turpis. Integer at interdum eu, neque. Maecenas eget sapien. Cras enim sodales quam. </p>
+          </div>
+        </div>
       </div>
 
     </section>
@@ -93,7 +91,7 @@
         <div class="item item--footer">
           <p><b>Name Name</b></p>
           <p><b>Tel. +48 123 456 789</b></p>
-          <p><b class="underline underline--red">kontakt@adres.strony</b></p>
+          <p><b>kontakt@adres.strony</b></p>
 
         </div>
         <div class="item item--footer item--footer__media social-media">
@@ -103,7 +101,7 @@
           <a href="#" data-icon="google"></a>
 
         </div>
-        <div class="item item--footer item--footer__created">
+        <div class="item item--footer item--footer__copyright">
           <p>&copy; Copiright 2017 by Name Name</p>
           <p>Web created by
             <a href="http://www.wkrawiec.pl" target="_blank">wkrawiec.pl</a></p>

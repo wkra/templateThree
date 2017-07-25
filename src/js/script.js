@@ -69,24 +69,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
 })();
   //end parralax
-  // sticky menu
-  (function(){
-    var nav = ".section--header__nav";
-    var navOffsetTop = $(nav).offset().top;
-    var windowScrollPosTop = jQuery(window).scrollTop();
-    $(window).scroll(positionNav);
-    
-    function positionNav(){
-      windowScrollPosTop = jQuery(window).scrollTop();
-    if (windowScrollPosTop>=navOffsetTop){
-      $(nav).css("position","fixed");
-    } else {
-      $(nav).css("position","relative");
-    }
-    };
-  })()
-  
-  // end sticky menu 
+//  // sticky menu
+//  (function(){
+//    var nav = ".section--header__nav";
+//    var navOffsetTop = $(nav).offset().top;
+//    var windowScrollPosTop = jQuery(window).scrollTop();
+//    $(window).scroll(positionNav);
+//    
+//    function positionNav(){
+//      windowScrollPosTop = jQuery(window).scrollTop();
+//    if (windowScrollPosTop>=navOffsetTop){
+//      $(nav).css("position","fixed");
+//    } else {
+//      $(nav).css("position","relative");
+//    }
+//    };
+//  })()
+//  
+//  // end sticky menu 
   
   
 

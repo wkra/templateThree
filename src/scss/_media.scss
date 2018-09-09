@@ -1,0 +1,88 @@
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+
+// Medium devices (tablets, 768px and up)
+//@media only screen and (min-width: 768px), only screen and (min-device-width: 768px){
+@media (min-width: 768px) {
+  .container--flex {
+    display:flex!important;
+  }
+  .item--footer__media{
+    text-align: center;
+  }
+  .item--footer__menu{
+    text-align: center;
+  }
+  .item--footer__created{
+    text-align: right;
+  }
+  .section--last{
+    padding-top:70px;
+    padding-bottom: 20px;
+  }
+  .section--header__bg{
+    background-position: 50% -70px;
+    margin-bottom: -70px;
+  }
+
+  .flex{
+    display:flex;
+    justify-content: space-around;
+  }
+  .item--footer__copyright{
+    p {
+      text-align: right;
+    }
+  }
+  .section--item__text{
+
+  }
+  .padding{
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .section__b{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    .white {
+      padding-top: 50px;
+    }
+    .section--item__text{
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    p {
+      padding-right: 35px;
+    }
+    i {
+      transform: translateX(30px) translateY(10px);
+    }
+  }
+  .social-media--icons {
+    margin-bottom: 0;
+  }
+
+
+}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px){
+  .section__b{
+    .section--item__text{
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+
+  }
+  .padding{
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px){
+
+}
